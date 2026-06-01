@@ -135,12 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = new FormData(this);
 
-            // Append the access key dynamically from config
-            if (typeof CONFIG !== 'undefined' && CONFIG.WEB3FORMS_ACCESS_KEY) {
-                formData.append('access_key', CONFIG.WEB3FORMS_ACCESS_KEY);
-            } else {
-                console.error("Web3Forms access key is missing. Ensure config.js is loaded and the key is set.");
-            }
+
 
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
