@@ -196,6 +196,7 @@ nav a:hover::after {
     font-weight: 800;
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
